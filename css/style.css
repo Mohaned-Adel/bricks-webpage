@@ -178,3 +178,46 @@ header .main-header .main-cont .view-more {
     color: #777;
     text-transform: capitalize;
 }
+
+/*** start skills sec **/ 
+.skills {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 0;
+}
+
+.skills .skills-cont {
+    margin: 75px 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.skills .skills-cont div {
+    width: 33.3333%;
+    padding-top: 50px;
+}
+
+.skills .skills-cont div i {
+    color: gold;
+    font-size: 1.5em;
+}
+
+.skills-cont div h3 {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.skills-cont div p {
+    padding: 0 30px 50px;
+}
+
+.skills-cont div.border-bot {
+    border-bottom: 1px solid black;
+}
+
+.skills-cont div.border-right {
+    border-right: 1px solid black;
+}
