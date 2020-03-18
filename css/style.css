@@ -8,12 +8,123 @@
     box-sizing: border-box;
 }
 body {
+    height: 10000px;
     overflow-x: hidden;
 }
 
 /* start header */
+header {
+    background-image: url(../img/header.jpg);
+    color: papayawhip;
+    background-size: 100% 100%;
+}
+.container {
+    margin: 0 15px
+}
 
-.bg .info .container {
-    background-color: #bbb;
+header .cont-border {
+    border-bottom: 1px solid black;
+}
+header .contacts {
     display: flex;
+    justify-content: flex-start;
+}
+
+header .contacts .social-icons,
+header .contacts .mob-tel,
+header .contacts .e-mail {
+    padding: 5px 20px 5px 20px;
+}
+
+header .contacts .mob-tel,
+header .contacts .e-mail {
+    border-right: 1px solid black;
+}
+
+header .contacts .social-icons {
+    border-left: 1px solid black;
+    margin-left: auto;
+}
+
+header .contacts .social-icons i {
+    padding: 0 5px;
+}
+
+header .nav-bar-sec {
+    padding: 20px;
+}
+
+header .nav-bar-sec .cont {
+    display: flex;
+    align-items: center;
+}
+
+header .main-logo {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-right: 20px;
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav li {
+    text-decoration: none;
+    display:block;
+    padding: 2px 15px;
+    text-align: center;
+    color:#464141;
+    margin:0;
+    font-family:sans-serif;
+}
+
+nav li.home {
+    border: 1px solid black;
+}
+
+header .cont .nav-left {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+header .cont .nav-left div {
+    padding-left: 25px;
+}
+
+header .cont .nav-left div:first-child {
+    padding-left: 0;
+}
+
+header .nav-bar-sec .nav-left .lang .lang-sel{
+    text-transform: uppercase;
+}
+
+
+header .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 10px;
+}
+
+header .main-header .main-cont {
+    text-align: center;
+}
+header .main-header .main-cont h1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .main-header .main-cont p {
+    padding: 20px 0;
+}
+
+header .main-header .main-cont .view-more {
+    padding: 10px 20px;
+    background-color: yellow;
+    border-color: transparent;
+    border-radius: 30px;
+    margin-top: 10px;
 }
