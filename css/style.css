@@ -128,3 +128,53 @@ header .main-header .main-cont .view-more {
     border-radius: 30px;
     margin-top: 10px;
 }
+
+/***** start projects sec ****/
+
+.latest-projects {
+    text-align: center;
+    margin: 75px ;
+}
+
+.latest-projects .container h4 {
+    color: #777;
+    font-style: italic;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.latest-projects .container h2 {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+}
+
+.latest-projects .container .sec-content {
+    width: 60%;
+    margin: 35px auto;
+    color: #777;
+}
+
+.latest-projects .container .projects {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.latest-projects .container .projects img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.latest-projects .container .projects .proj-title {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.latest-projects .container .projects .proj-dec {
+    color: #777;
+    text-transform: capitalize;
+}
