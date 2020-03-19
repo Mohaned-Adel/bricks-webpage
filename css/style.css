@@ -8,8 +8,11 @@
     box-sizing: border-box;
 }
 body {
-    height: 10000px;
     overflow-x: hidden;
+}
+
+.upper {
+    text-transform: uppercase;
 }
 
 /* start header */
@@ -337,4 +340,84 @@ header .main-header .main-cont .view-more {
     margin-top: 10px;
     border: 2px solid transparent;
     margin-bottom: 30px;
+}
+
+/** start footer **/
+
+footer {
+    background-color: teal;
+}
+
+footer .foot-cont {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .foot-cont > div {
+    width: 23%;
+}
+
+footer .foot-cont .contact div.info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+footer .foot-cont .bord-bot {
+    border-bottom: 1px solid black;
+}
+
+footer .foot-cont .pad-top {
+    padding-top: 10px;
+}
+
+footer .foot-cont .first {
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+
+footer .foot-cont .contact div > p {
+    width: 60%;
+}
+
+footer .foot-cont .contact div > span {
+    text-transform: capitalize;
+    color: white;
+}
+footer .foot-cont .contact .follow > :last-child {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .foot-cont .photos .ph-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .foot-cont .recent .rec-cont {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+footer .foot-cont .news-sign input {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #777;
+    border-style: none;
+}
+
+footer .foot-cont .news-sign button {
+    width: 100%;
+    padding: 10px;
+    border-color: #777;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-style: solid;
 }
