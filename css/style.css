@@ -300,3 +300,41 @@ header .main-header .main-cont .view-more {
 .about-us .about-cont .build-sky .build-para {
     margin-bottom: 30px;
 }
+
+/*** start start-proj section **/ 
+
+.start-project .start-proj-cont {
+    padding: 50px;
+    text-align: center;
+}
+
+.start-project .start-proj-cont .products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.start-proj-cont .products img {
+    border-radius: 50%;
+}
+
+.start-project .start-proj-cont .proj .start-title {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.proj .start-para {
+    margin: 20px 0;
+    font-style: italic;
+    color: #333;
+}
+
+.proj .start-btn {
+    padding: 10px 20px;
+    background-color: yellow;
+    border-color: transparent;
+    border-radius: 30px;
+    margin-top: 10px;
+    border: 2px solid transparent;
+    margin-bottom: 30px;
+}
