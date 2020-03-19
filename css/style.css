@@ -264,3 +264,39 @@ header .main-header .main-cont .view-more {
     justify-content: space-evenly;
 }
 
+/**** start about us section **/
+
+.about-us .about-cont {
+    display: flex;
+    text-align: center;
+}
+
+.about-us .about-cont .build-sky {
+    padding: 70px 20px;
+    position: relative;
+}
+
+.about-cont div.layer {
+    background-color: rgba(88, 88, 56, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-us .about-cont div i {
+    color: gold;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.about-us .about-cont .build-sky .build-title {
+    text-transform: uppercase;
+    color: #333;
+    margin: 20px ;
+}
+
+.about-us .about-cont .build-sky .build-para {
+    margin-bottom: 30px;
+}
