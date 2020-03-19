@@ -221,3 +221,46 @@ header .main-header .main-cont .view-more {
 .skills-cont div.border-right {
     border-right: 1px solid black;
 }
+
+/**** us diff section ****/
+
+.us-diff {
+    display: flex;
+}
+
+.us-diff .diff-img {
+    background-image: url(../img/us-diff.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.us-diff  .diff-info {
+    width: 50%;
+    text-align: center;
+    padding: 75px 100px;
+}
+
+.us-diff .diff-info .diff-qua {
+    font-style: italic;
+    text-transform: capitalize;
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.us-diff .diff-info .diff-title {
+    text-transform: uppercase;
+    padding: 15px 10px;
+    font-size: 30px;
+}
+
+.us-diff .diff-info .diff-para {
+    padding: 20px 10px 30px;
+}
+
+.us-diff .diff-info .diff-imgs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
