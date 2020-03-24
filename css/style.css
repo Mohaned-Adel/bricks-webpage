@@ -7,13 +7,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-body {
-    overflow-x: hidden;
-}
+body {overflow-x: hidden}
 
-.upper {
-    text-transform: uppercase;
-}
+.upper { text-transform: uppercase }
 
 /* start header */
 header {
@@ -21,46 +17,25 @@ header {
     color: papayawhip;
     background-size: 100% 100%;
 }
-.container {
-    margin: 0 15px
-}
+.container { margin: 0 15p }
 
-header .cont-border {
-    border-bottom: 1px solid black;
-}
-header .contacts {
-    display: flex;
-    justify-content: flex-start;
-}
+header .cont-border { border-bottom: 1px solid black }
+header .contacts { display: flex; justify-content: flex-start }
 
 header .contacts .social-icons,
 header .contacts .mob-tel,
-header .contacts .e-mail {
-    padding: 5px 20px 5px 20px;
-}
+header .contacts .e-mail { padding: 5px 20px 5px 20px }
 
 header .contacts .mob-tel,
-header .contacts .e-mail {
-    border-right: 1px solid black;
-}
+header .contacts .e-mail { border-right: 1px solid black }
 
-header .contacts .social-icons {
-    border-left: 1px solid black;
-    margin-left: auto;
-}
+header .contacts .social-icons { border-left: 1px solid black; margin-left: auto }
 
-header .contacts .social-icons i {
-    padding: 0 5px;
-}
+header .contacts .social-icons i { padding: 0 5px }
 
-header .nav-bar-sec {
-    padding: 20px;
-}
+header .nav-bar-sec { padding: 20px }
 
-header .nav-bar-sec .cont {
-    display: flex;
-    align-items: center;
-}
+header .nav-bar-sec .cont { display: flex; align-items: center }
 
 header .main-logo {
     font-weight: bold;
@@ -82,9 +57,7 @@ nav li {
     font-family:sans-serif;
 }
 
-nav li.home {
-    border: 1px solid black;
-}
+nav li.home { border: 1px solid black }
 
 header .cont .nav-left {
     margin-left: auto;
@@ -92,17 +65,11 @@ header .cont .nav-left {
     align-items: center;
 }
 
-header .cont .nav-left div {
-    padding-left: 25px;
-}
+header .cont .nav-left div { padding-left: 25px }
 
-header .cont .nav-left div:first-child {
-    padding-left: 0;
-}
+header .cont .nav-left div:first-child { padding-left: 0 }
 
-header .nav-bar-sec .nav-left .lang .lang-sel{
-    text-transform: uppercase;
-}
+header .nav-bar-sec .nav-left .lang .lang-sel{ text-transform: uppercase }
 
 
 header .main-header {
@@ -112,17 +79,10 @@ header .main-header {
     padding: 200px 10px;
 }
 
-header .main-header .main-cont {
-    text-align: center;
-}
-header .main-header .main-cont h1 {
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-}
+header .main-header .main-cont { text-align: center }
+header .main-header .main-cont h1 { text-transform: uppercase; font-family: Arial, Helvetica, sans-serif }
 
-header .main-header .main-cont p {
-    padding: 20px 0;
-}
+header .main-header .main-cont p { padding: 20px 0 }
 
 header .main-header .main-cont .view-more {
     padding: 10px 20px;
@@ -134,10 +94,7 @@ header .main-header .main-cont .view-more {
 
 /***** start projects sec ****/
 
-.latest-projects {
-    text-align: center;
-    margin: 75px ;
-}
+.latest-projects { text-align: center; margin: 75px  }
 
 .latest-projects .container h4 {
     color: #777;
@@ -166,10 +123,7 @@ header .main-header .main-cont .view-more {
     margin: 50px;
 }
 
-.latest-projects .container .projects img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
+.latest-projects .container .projects img { border-radius: 50%; margin-bottom: 10px }
 
 .latest-projects .container .projects .proj-title {
     margin: 10px 0;
@@ -177,10 +131,7 @@ header .main-header .main-cont .view-more {
     font-weight: bold;
 }
 
-.latest-projects .container .projects .proj-dec {
-    color: #777;
-    text-transform: capitalize;
-}
+.latest-projects .container .projects .proj-dec { color: #777; text-transform: capitalize }
 
 /*** start skills sec **/ 
 .skills {
@@ -197,15 +148,9 @@ header .main-header .main-cont .view-more {
     text-align: center;
 }
 
-.skills .skills-cont div {
-    width: 33.3333%;
-    padding-top: 50px;
-}
+.skills .skills-cont div { width: 33.3333%; padding-top: 50px }
 
-.skills .skills-cont div i {
-    color: gold;
-    font-size: 1.5em;
-}
+.skills .skills-cont div i { color: gold; font-size: 1.5em }
 
 .skills-cont div h3 {
     margin: 10px 0;
@@ -213,23 +158,15 @@ header .main-header .main-cont .view-more {
     font-family: sans-serif;
 }
 
-.skills-cont div p {
-    padding: 0 30px 50px;
-}
+.skills-cont div p {padding: 0 30px 50px}
 
-.skills-cont div.border-bot {
-    border-bottom: 1px solid black;
-}
+.skills-cont div.border-bot {border-bottom: 1px solid black}
 
-.skills-cont div.border-right {
-    border-right: 1px solid black;
-}
+.skills-cont div.border-right {border-right: 1px solid black}
 
 /**** us diff section ****/
 
-.us-diff {
-    display: flex;
-}
+.us-diff {display: flex;}
 
 .us-diff .diff-img {
     background-image: url(../img/us-diff.jpg);
@@ -258,26 +195,15 @@ header .main-header .main-cont .view-more {
     font-size: 30px;
 }
 
-.us-diff .diff-info .diff-para {
-    padding: 20px 10px 30px;
-}
+.us-diff .diff-info .diff-para { padding: 20px 10px 30px }
 
-.us-diff .diff-info .diff-imgs {
-    display: flex;
-    justify-content: space-evenly;
-}
+.us-diff .diff-info .diff-imgs { display: flex; justify-content: space-evenly }
 
 /**** start about us section **/
 
-.about-us .about-cont {
-    display: flex;
-    text-align: center;
-}
+.about-us .about-cont { display: flex; text-align: center }
 
-.about-us .about-cont .build-sky {
-    padding: 70px 20px;
-    position: relative;
-}
+.about-us .about-cont .build-sky { padding: 70px 20px; position: relative }
 
 .about-cont div.layer {
     background-color: rgba(88, 88, 56, 0.7);
@@ -300,16 +226,11 @@ header .main-header .main-cont .view-more {
     margin: 20px ;
 }
 
-.about-us .about-cont .build-sky .build-para {
-    margin-bottom: 30px;
-}
+.about-us .about-cont .build-sky .build-para { margin-bottom: 30px }
 
 /*** start start-proj section **/ 
 
-.start-project .start-proj-cont {
-    padding: 50px;
-    text-align: center;
-}
+.start-project .start-proj-cont { padding: 50px; text-align: center }
 
 .start-project .start-proj-cont .products {
     display: flex;
@@ -317,14 +238,9 @@ header .main-header .main-cont .view-more {
     margin-bottom: 70px;
 }
 
-.start-proj-cont .products img {
-    border-radius: 50%;
-}
+.start-proj-cont .products img { border-radius: 50% }
 
-.start-project .start-proj-cont .proj .start-title {
-    text-transform: uppercase;
-    font-size: 2em;
-}
+.start-project .start-proj-cont .proj .start-title { text-transform: uppercase; font-size: 2em }
 
 .proj .start-para {
     margin: 20px 0;
@@ -344,9 +260,7 @@ header .main-header .main-cont .view-more {
 
 /** start footer **/
 
-footer {
-    background-color: teal;
-}
+footer { background-color: teal }
 
 footer .foot-cont {
     padding: 50px;
@@ -354,9 +268,7 @@ footer .foot-cont {
     justify-content: space-between;
 }
 
-footer .foot-cont > div {
-    width: 23%;
-}
+footer .foot-cont > div { width: 23% }
 
 footer .foot-cont .contact div.info {
     display: flex;
@@ -364,27 +276,15 @@ footer .foot-cont .contact div.info {
     padding-bottom: 10px;
 }
 
-footer .foot-cont .bord-bot {
-    border-bottom: 1px solid black;
-}
+footer .foot-cont .bord-bot { border-bottom: 1px solid black }
 
-footer .foot-cont .pad-top {
-    padding-top: 10px;
-}
+footer .foot-cont .pad-top { padding-top: 10px }
 
-footer .foot-cont .first {
-    padding-bottom: 20px;
-    padding-top: 0px;
-}
+footer .foot-cont .first { padding-bottom: 20px; padding-top: 0px }
 
-footer .foot-cont .contact div > p {
-    width: 60%;
-}
+footer .foot-cont .contact div > p { width: 60% }
 
-footer .foot-cont .contact div > span {
-    text-transform: capitalize;
-    color: white;
-}
+footer .foot-cont .contact div > span { text-transform: capitalize; color: white }
 footer .foot-cont .contact .follow > :last-child {
     width: 60%;
     display: flex;
