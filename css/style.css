@@ -182,13 +182,21 @@ header .main-header .main-cont .view-more {
 
 /*** start skills sec **/ 
 .skills {
-    background-color: blueviolet;
+    background-image: url(../img/garden-xl.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
-    padding: 10px 0;
+}
+
+.skills .layer{
+    background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .skills .skills-cont {
-    margin: 75px 25px;
+    padding: 5rem 2rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -197,19 +205,19 @@ header .main-header .main-cont .view-more {
 
 .skills .skills-cont div { width: 33.3333%; padding-top: 50px }
 
-.skills .skills-cont div i { color: gold; font-size: 1.5em }
+.skills .skills-cont div i { color: var(--warning); font-size: 1.5em }
 
 .skills-cont div h3 {
-    margin: 10px 0;
+    margin: 1rem 0;
     text-transform: uppercase;
     font-family: sans-serif;
 }
 
-.skills-cont div p {padding: 0 30px 50px}
+.skills-cont div p {padding: 0 30px 50px; color: rgba(255,255,255,0.75)}
 
-.skills-cont div.border-bot {border-bottom: 1px solid black}
+.skills-cont div.border-bot {border-bottom: 1px solid white}
 
-.skills-cont div.border-right {border-right: 1px solid black}
+.skills-cont div.border-right {border-right: 1px solid white}
 
 /**** us diff section ****/
 
