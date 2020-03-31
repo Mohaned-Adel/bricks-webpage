@@ -150,18 +150,24 @@ header .main-header .main-cont .view-more {
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 10px;
+    font-size: 2rem;
+}
+
+.latest-projects .breaker {
+    width: 10%;
+    margin: auto;
+    margin-top: 1.5rem;
 }
 
 .latest-projects .container .sec-content {
     width: 60%;
     margin: 35px auto;
-    color: #777;
+    color: rgba(0,0,0,0.7);
 }
 
 .latest-projects .container .projects {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
 }
 
 .latest-projects .container .projects img { border-radius: 50%; margin-bottom: 10px }
