@@ -266,33 +266,31 @@ header .main-header .main-cont .view-more {
 }
 
 /**** start about us section **/
+.about-us .layer {background-color: rgba(0, 0, 0, 0.7); padding: 6rem 3rem;}
 
 .about-us .about-cont { display: flex; text-align: center }
 
-.about-us .about-cont .build-sky { padding: 70px 20px; position: relative }
+.about-us .about1 { background-image: url(../img/about1.jpg) }
 
-.about-cont div.layer {
-    background-color: rgba(88, 88, 56, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.about-us .about2 { background-image: url(../img/about2.jpg) }
+
+.about-us .about3 {
+    background-image: url(../img/about3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.about-us .about-cont div i {
-    color: gold;
-    font-size: 25px;
-    margin-bottom: 15px;
-}
+.about-us .about-cont div i { color: rgba(250,215,0,0.75); font-size: 25px; }
 
 .about-us .about-cont .build-sky .build-title {
     text-transform: uppercase;
-    color: #333;
+    color: white;
     margin: 20px ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-us .about-cont .build-sky .build-para { margin-bottom: 30px }
+.about-us .about-cont .build-sky .build-para { color: rgba(255,255,255,0.7) }
 
 /*** start start-proj section **/ 
 
