@@ -314,17 +314,22 @@ header .main-header .main-cont .view-more {
 
 .proj .start-btn {
     padding: 10px 20px;
-    background-color: yellow;
+    background-color: var(--yellow);
     border-color: transparent;
     border-radius: 30px;
-    margin-top: 10px;
-    border: 2px solid transparent;
-    margin-bottom: 30px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgba(255,255,255,0.75);
 }
 
 /** start footer **/
 
-footer { background-color: teal }
+.dark-white {
+    color: rgba(255,255,255,0.5);
+}
+
+footer { background-color: rgba(15, 14, 19, 0.85) }
 
 footer .foot-cont {
     padding: 50px;
@@ -338,9 +343,10 @@ footer .foot-cont .contact div.info {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
+    color: rgba(255,255,255,0.5);
 }
 
-footer .foot-cont .bord-bot { border-bottom: 1px solid black }
+footer .foot-cont .bord-bot { border-bottom: 1px solid rgba(143, 142, 146, 0.3) }
 
 footer .foot-cont .pad-top { padding-top: 10px }
 
@@ -348,11 +354,12 @@ footer .foot-cont .first { padding-bottom: 20px; padding-top: 0px }
 
 footer .foot-cont .contact div > p { width: 60% }
 
-footer .foot-cont .contact div > span { text-transform: capitalize; color: white }
+footer .foot-cont .contact div > span { text-transform: capitalize; color: rgba(255,255,255,0.9) }
 footer .foot-cont .contact .follow > :last-child {
     width: 60%;
     display: flex;
     justify-content: space-around;
+    color: rgba(255,255,255,0.75);
 }
 
 footer .foot-cont .photos .ph-imgs {
@@ -367,21 +374,32 @@ footer .foot-cont .recent .rec-cont {
     text-transform: capitalize;
 }
 
+.rec-cont h5 {
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 0.3rem;
+}
+
+.news-sign p {
+    color: rgba(255,255,255,0.75);
+}
+
 footer .foot-cont .news-sign input {
     display: block;
     width: 100%;
     margin: 20px 0;
     padding: 10px;
     border-radius: 20px;
-    background-color: #777;
+    background-color: rgba(143, 142, 146, 0.3);
     border-style: none;
 }
 
 footer .foot-cont .news-sign button {
     width: 100%;
     padding: 10px;
-    border-color: #777;
+    color: rgba(255,255,255,0.5);
     background-color: transparent;
     text-transform: uppercase;
     border-style: solid;
+    border-radius: 30px;
+    border-color: rgba(255,255,255,0.5);
 }
