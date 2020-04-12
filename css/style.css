@@ -110,15 +110,15 @@ nav li {
 
 nav li.home { border: 1px solid white }
 
-header .cont .nav-left {
+.nav-left {
     margin-left: auto;
     display: flex;
     align-items: center;
 }
 
-header .cont .nav-left div { padding-left: 25px }
+.nav-left div { padding-left: 25px }
 
-header .cont .nav-left div:first-child { padding-left: 0 }
+.nav-left div:first-child { padding-left: 0 }
 
 header .nav-bar-sec .nav-left .lang .lang-sel{ text-transform: uppercase }
 
@@ -200,6 +200,21 @@ header .main-header .main-cont .view-more {
     }
 }
 
+@media (max-width:750px) {
+    header .cont-border,
+    .nav-left .shop,
+    .main-header .left-arrow,
+    .main-header .right-arrow {
+        display: none;
+    }
+    .main-cont p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    ul {
+        width: 100%;
+    }
+}
 
 /***** start projects sec ****/
 
