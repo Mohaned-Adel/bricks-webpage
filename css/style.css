@@ -34,6 +34,8 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -42,14 +44,26 @@ body {overflow-x: hidden}
 
 .upper { text-transform: uppercase }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
 /* start header */
 header {
     background-image: url(../img/header.jpg);
     color: papayawhip;
-    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    overflow: hidden;
 }
 
-header .layer {background-color: rgba(0, 0, 0, 0.7);}
+header .layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    height: 100%;
+}
 .container { margin: 0 15px }
 
 header .cont-border { border-bottom: 1px solid white }
@@ -72,22 +86,26 @@ header .nav-bar-sec .cont { display: flex; align-items: center }
 
 header .main-logo {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 30px;
     padding-right: 20px;
 }
-header nav {
+header .list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    display: inline-block;
 }
 nav li {
     text-decoration: none;
-    display:block;
+    display:inline-block;
     padding: 5px 15px;
     text-align: center;
-    color: rgba(255,255,255,0.5);
     margin:0;
     font-family:sans-serif;
+}
+
+.list li a {
+    color: rgba(255,255,255,0.5);
 }
 
 nav li.home { border: 1px solid white }
@@ -105,7 +123,11 @@ header .cont .nav-left div:first-child { padding-left: 0 }
 header .nav-bar-sec .nav-left .lang .lang-sel{ text-transform: uppercase }
 
 
-header .main-header {
+#check,.checkbtn,.closebtn{
+    display: none;
+}
+
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,7 +137,7 @@ header .main-header {
 header .main-header .main-cont { text-align: center }
 header .main-header .main-cont h1 { text-transform: uppercase; font-family: Arial, Helvetica, sans-serif }
 
-header .main-header .main-cont p { 
+.main-cont p { 
     padding: 20px 0;
     width: 60%;
     margin: auto;
@@ -132,6 +154,52 @@ header .main-header .main-cont .view-more {
     font-weight: bolder;
     color: rgba(255,255,255,0.5);
 }
+
+@media (max-width: 1080px){
+    ul {
+        position: fixed;
+        width: 30%;
+        height: 100vh;
+        min-height: 400px;
+        right: -100%;
+        background: #2c3e50;
+        top: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+    .checkbtn {
+        display: block;
+        margin-left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #check:checked ~ ul {
+        right: 0;
+    }
+    nav li {
+        display: block;
+        width: fit-content;
+        margin: 50px auto;
+    }
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 1.4em;
+        display: block;
+        cursor: pointer;
+    }
+    header {
+        min-height: 550px;
+    }
+    .main-header {
+        padding: 75px 30px;
+    }
+    .main-cont p {
+        width: 75%;
+    }
+}
+
 
 /***** start projects sec ****/
 
