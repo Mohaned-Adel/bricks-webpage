@@ -56,6 +56,7 @@ header {
     width: 100%;
     height: 100vh;
     min-height: 650px;
+    max-height: 700px;
     overflow: hidden;
 }
 
@@ -155,67 +156,6 @@ header .main-header .main-cont .view-more {
     color: rgba(255,255,255,0.5);
 }
 
-@media (max-width: 1080px){
-    ul {
-        position: fixed;
-        width: 30%;
-        height: 100vh;
-        min-height: 400px;
-        right: -100%;
-        background: #2c3e50;
-        top: 0;
-        text-align: center;
-        transition: all .5s;
-    }
-    .checkbtn {
-        display: block;
-        margin-left: 20px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    #check:checked ~ ul {
-        right: 0;
-    }
-    nav li {
-        display: block;
-        width: fit-content;
-        margin: 50px auto;
-    }
-    .closebtn {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-size: 1.4em;
-        display: block;
-        cursor: pointer;
-    }
-    header {
-        min-height: 550px;
-    }
-    .main-header {
-        padding: 75px 30px;
-    }
-    .main-cont p {
-        width: 75%;
-    }
-}
-
-@media (max-width:750px) {
-    header .cont-border,
-    .nav-left .shop,
-    .main-header .left-arrow,
-    .main-header .right-arrow {
-        display: none;
-    }
-    .main-cont p {
-        width: 100%;
-        font-size: 1.2rem;
-    }
-    ul {
-        width: 100%;
-    }
-}
-
 /***** start projects sec ****/
 
 .latest-projects { text-align: center; margin: 75px  }
@@ -251,6 +191,10 @@ header .main-header .main-cont .view-more {
 .latest-projects .container .projects {
     display: flex;
     justify-content: space-between;
+}
+
+.projects .proj-div {
+    width: 25%;
 }
 
 .latest-projects .container .projects img { border-radius: 50%; margin-bottom: 10px }
@@ -349,13 +293,26 @@ header .main-header .main-cont .view-more {
 }
 
 /**** start about us section **/
-.about-us .layer {background-color: rgba(0, 0, 0, 0.7); padding: 6rem 3rem;}
+.about-us .layer {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 6rem 3rem;
+    height: 100%;
+}
 
 .about-us .about-cont { display: flex; text-align: center }
 
-.about-us .about1 { background-image: url(../img/about1.jpg) }
+.about-us .about1 { 
+    background-image: url(../img/about1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-.about-us .about2 { background-image: url(../img/about2.jpg) }
+.about-us .about2 { 
+    background-image: url(../img/about2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .about-us .about3 {
     background-image: url(../img/about3.jpg);
@@ -377,7 +334,7 @@ header .main-header .main-cont .view-more {
 
 /*** start start-proj section **/ 
 
-.start-project .start-proj-cont { padding: 50px; text-align: center }
+.start-project .start-proj-cont { padding: 50px 0; text-align: center }
 
 .start-project .start-proj-cont .products {
     display: flex;
@@ -485,4 +442,135 @@ footer .foot-cont .news-sign button {
     border-style: solid;
     border-radius: 30px;
     border-color: rgba(255,255,255,0.5);
+}
+
+@media (max-width: 1080px){
+    ul {
+        position: fixed;
+        width: 30%;
+        height: 100vh;
+        min-height: 400px;
+        right: -100%;
+        background: #2c3e50;
+        top: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+    .checkbtn {
+        display: block;
+        margin-left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #check:checked ~ ul {
+        right: 0;
+    }
+    nav li {
+        display: block;
+        width: fit-content;
+        margin: 50px auto;
+    }
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 1.4em;
+        display: block;
+        cursor: pointer;
+    }
+    header {
+        min-height: 550px;
+    }
+    .main-header {
+        padding: 75px 30px;
+    }
+    .main-cont p {
+        width: 75%;
+    }
+    .us-diff {
+        position: relative;
+    }
+    .us-diff .diff-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.75;
+        z-index: -1;
+    }
+    .us-diff .diff-info {
+        width: 100%;
+        padding: 30px;
+    }
+    .us-diff .diff-info .diff-para {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+    }
+    .us-diff .diff-imgs img {
+        border: 10px solid darkgray;
+        border-radius: 50%;
+    }
+    .us-diff .diff-info .diff-qua {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .about-us .about-cont {
+        flex-direction: column;
+    }
+    .start-project .start-proj-cont .products {
+        overflow: scroll;
+    }
+    .start-project .start-proj-cont .products::-webkit-scrollbar {
+        display: none;
+    }
+    .start-project .start-proj-cont .products div {
+        margin: 30px;
+    }
+
+}
+
+@media (max-width:750px) {
+    header .cont-border,
+    .nav-left .shop,
+    .main-header .left-arrow,
+    .main-header .right-arrow {
+        display: none;
+    }
+    .main-cont p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    ul {
+        width: 100%;
+    }
+    .latest-projects {
+        margin: 75px 10px;
+    }
+    .latest-projects .container .sec-content {
+        width: 90%;
+    }
+    .latest-projects .container .projects,
+    .us-diff .diff-info .diff-imgs {
+        flex-direction: column;
+    }
+    .projects .proj-div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .skills .skills-cont {
+        flex-direction: column;
+        padding: 0;
+    }
+    .skills .skills-cont div {
+        width: 100%;
+        border: none;
+    }
+    .us-diff .diff-img {
+        display: none;
+    }
+    .us-diff .diff-info .diff-imgs .img-one {
+        margin-bottom: 30px;
+    }
 }
