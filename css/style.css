@@ -550,6 +550,7 @@ footer .foot-cont .news-sign button {
     }
     .main-header {
         padding: 0 10px;
+        height: 100%;
     }
     .latest-projects {
         margin: 75px 10px;
