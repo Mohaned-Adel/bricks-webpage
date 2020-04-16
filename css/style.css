@@ -150,7 +150,7 @@ header .main-header .main-cont .view-more {
     background-color: var(--yellow);
     border-color: transparent;
     border-radius: 30px;
-    margin-top: 2rem;
+    margin: 2rem 0;
     text-transform: uppercase;
     font-weight: bolder;
     color: rgba(255,255,255,0.5);
@@ -547,6 +547,9 @@ footer .foot-cont .news-sign button {
     }
     ul {
         width: 100%;
+    }
+    .main-header {
+        padding: 0 10px;
     }
     .latest-projects {
         margin: 75px 10px;
