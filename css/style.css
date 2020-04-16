@@ -406,6 +406,7 @@ footer .foot-cont .photos .ph-imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 90%;
 }
 
 footer .foot-cont .recent .rec-cont {
@@ -528,7 +529,9 @@ footer .foot-cont .news-sign button {
     .start-project .start-proj-cont .products div {
         margin: 30px;
     }
-
+    footer .foot-cont {
+        padding: 50px 0;
+    }
 }
 
 @media (max-width:750px) {
@@ -572,5 +575,13 @@ footer .foot-cont .news-sign button {
     }
     .us-diff .diff-info .diff-imgs .img-one {
         margin-bottom: 30px;
+    }
+    footer .foot-cont {
+        flex-direction: column;
+        padding: 0px;
+    }
+    footer .foot-cont > div {
+        width: 100%;
+        margin: 30px 0;
     }
 }
